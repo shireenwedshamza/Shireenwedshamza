@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shireen &amp; Hamza Zafar · Wedding Invitation</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--g:#b8996a;--g2:#7d6340;--bg:#fbf8f2;--bg2:#efe4d0;--cream:#4a3a28;--ink:#3b2e1f;--paper:#fffdf8;
+--ar:'Amiri','Scheherazade New','Noto Naskh Arabic','Geeza Pro',serif;--se:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*,*::before,*::after{box-sizing:inherit;-webkit-tap-highlight-color:transparent}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--cream);font-family:var(--se);overflow:hidden}
+.ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate;line-height:1.9;color:var(--g2)}
+.page{position:absolute;inset:0;overflow-y:auto;opacity:0;pointer-events:none;transition:opacity .9s ease,transform .9s ease;transform:scale(1.03);display:flex;flex-direction:column;padding:34px 26px 92px;
+background:radial-gradient(ellipse at 50% 30%,var(--bg2),var(--bg) 75%)}
+.page::before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.14;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cg fill='none' stroke='%23b8996a' stroke-width='.8'%3E%3Crect x='12' y='12' width='36' height='36'/%3E%3Crect x='12' y='12' width='36' height='36' transform='rotate(45 30 30)'/%3E%3Ccircle cx='30' cy='30' r='8'/%3E%3C/g%3E%3C/svg%3E")}
+.page.on{opacity:1;pointer-events:auto;transform:none}
+.frame{position:fixed;inset:calc(10px + env(safe-area-inset-top,0px)) 10px calc(10px + env(safe-area-inset-bottom,0px));border:1px solid var(--g);pointer-events:none;z-index:2;border-radius:2px}
+.frame::before{content:"";position:absolute;inset:6px;border:1px solid rgba(184,153,106,.5)}
+.frame i{position:absolute;width:12px;height:12px;background:var(--g);transform:rotate(45deg)}
+.frame i:nth-child(1){left:-6px;top:-6px}.frame i:nth-child(2){right:-6px;top:-6px}.frame i:nth-child(3){left:-6px;bottom:-6px}.frame i:nth-child(4){right:-6px;bottom:-6px}
+.in{margin:auto;width:100%;max-width:440px;text-align:center;position:relative;z-index:3}
+h1,h2,h3,p{margin:0}
+.gold{color:var(--g2)}
+.div{display:flex;align-items:center;gap:14px;justify-content:center;margin:12px auto;color:var(--g)}
+.div::before,.div::after{content:"";height:1px;width:70px;background:linear-gradient(90deg,transparent,var(--g))}
+.div::after{transform:scaleX(-1)}
+.div svg{width:18px;height:18px}
+.small{font-size:clamp(14px,3.9vw,17px);letter-spacing:.04em;opacity:.9;line-height:1.5}
+.btn{font:600 16px var(--se);letter-spacing:.08em;color:var(--ink);background:linear-gradient(135deg,#e6d5b8,#c9ad80);border:0;border-radius:40px;padding:13px 24px;cursor:pointer;text-decoration:none;display:inline-block;box-shadow:0 6px 18px rgba(0,0,0,.35)}
+.btn.o{background:transparent;color:var(--g2);border:1px solid var(--g);box-shadow:none}
+.btn:active{transform:scale(.97)}
+.btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:18px}
+/* page 1 */
+#p0{align-items:center;justify-content:center}
+.scene{perspective:1400px;margin:auto;text-align:center}
+.book{width:min(68vw,290px);aspect-ratio:3/4.2;position:relative;margin:0 auto;transform-style:preserve-3d;transition:transform 1.6s cubic-bezier(.6,.05,.2,1);cursor:pointer;animation:float 4s ease-in-out infinite}
+.book.open{transform:translateX(50%) rotateX(4deg);animation:none}
+@keyframes float{50%{transform:translateY(-8px)}}
+.pg,.cover{position:absolute;inset:0;border-radius:3px 10px 10px 3px}
+.pg{background:linear-gradient(90deg,#e6d9c0,var(--paper) 12%);box-shadow:0 20px 40px rgba(80,60,30,.35);display:flex;align-items:center;justify-content:center;color:var(--ink)}
+.pg .ar{color:var(--g2);font-size:22px;text-align:center}
+.cover{transform-origin:left center;transition:transform 1.6s cubic-bezier(.6,.05,.2,1);transform-style:preserve-3d}
+.book.open .cover{transform:rotateY(-168deg)}
+.face{position:absolute;inset:0;border-radius:3px 10px 10px 3px;backface-visibility:hidden;-webkit-backface-visibility:hidden}
+.front{background:linear-gradient(135deg,#eadfc8,#d3bd96 70%);border:2px solid var(--g2);box-shadow:inset 0 0 0 7px #e2d2b3,inset 0 0 0 8px var(--g2),0 20px 40px rgba(80,60,30,.35);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:26px}
+.front::before{content:"";position:absolute;left:0;top:0;bottom:0;width:14px;background:linear-gradient(90deg,rgba(80,60,30,.35),transparent);border-radius:3px 0 0 3px}
+.front svg{width:86px;height:86px}
+.front .ar{font-size:clamp(20px,6vw,27px);color:var(--g2);text-shadow:none}
+.back{transform:rotateY(180deg);background:linear-gradient(90deg,var(--paper),#e6d9c0)}
+.cord{width:100px;height:1px;background:var(--g)}
+.hint{margin-top:34px;animation:pulse 2.2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+/* page 2 */
+.names{font-size:clamp(38px,12vw,56px);font-weight:600;line-height:1.05;color:var(--g2);letter-spacing:.02em}
+.amp{font-size:34px;font-style:italic;color:var(--g);line-height:1}
+.ch{display:inline-block;opacity:0;transform:translateY(14px);filter:blur(5px)}
+.page.on .ch{animation:ch .8s forwards;animation-delay:calc(.5s + var(--i)*.07s)}
+@keyframes ch{to{opacity:1;transform:none;filter:none}}
+/* page 3 */
+.roll{height:22px;border-radius:12px;background:linear-gradient(#a88a5c,#e3d1ae 40%,#a88a5c);box-shadow:0 6px 12px rgba(0,0,0,.45);position:relative;z-index:2}
+.parch{max-height:0;overflow:hidden;transition:max-height 1.5s ease;background:linear-gradient(90deg,#e6d9c0,var(--paper) 8%,var(--paper) 92%,#e6d9c0);color:var(--ink);margin:0 14px;border-left:1px solid #b79a4a;border-right:1px solid #b79a4a}
+.scroll.open .parch{max-height:560px}
+.parch .pad{padding:22px 16px;opacity:0;transition:opacity 1s .8s}
+.scroll.open .pad{opacity:1}
+.parch .ar{color:var(--g2);font-size:22px}
+.date{font-size:clamp(24px,7vw,32px);font-weight:600;color:var(--cream)}
+.cd{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:14px 0}
+.cd div{background:#f1e7d3;color:var(--cream);border-radius:8px;padding:9px 0;border:1px solid var(--g)}
+.cd b{display:block;font-size:26px;font-weight:600;font-variant-numeric:tabular-nums}
+.cd span{font-size:12px;letter-spacing:.08em}
+.parch .btn{margin-top:4px}
+.scroll .tap{margin-top:16px}
+.scroll.open .tap{display:none}
+.dot{position:absolute;width:4px;height:4px;border-radius:50%;background:var(--g2);opacity:0;animation:rise linear infinite;z-index:1}
+@keyframes rise{0%{opacity:0;transform:translateY(0)}20%{opacity:.7}100%{opacity:0;transform:translateY(-120px)}}
+/* page 4 */
+.track{display:flex;gap:0;overflow-x:auto;scroll-snap-type:x mandatory;perspective:900px;padding:20px calc(50% - 125px);margin:0 -26px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.card{flex:0 0 250px;scroll-snap-align:center;height:330px;margin:0 -10px;border-radius:14px;border:1px solid var(--g);background:linear-gradient(160deg,#fffdf8,#efe4d0);box-shadow:inset 0 0 0 6px #fffdf8,inset 0 0 0 7px rgba(184,153,106,.7),0 14px 30px rgba(80,60,30,.25);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;padding:24px;transition:transform .15s linear,opacity .15s linear;cursor:pointer}
+.card svg{width:44px;height:44px;color:var(--g)}
+.card h3{font-size:30px;font-weight:600;color:var(--g2)}
+.card .t{font-size:34px;font-weight:600;color:var(--cream)}
+.arrows{display:flex;gap:14px;justify-content:center;margin-top:14px;align-items:center}
+.arrows button{width:44px;height:44px;border-radius:50%;border:1px solid var(--g);background:transparent;color:var(--g2);font-size:20px;cursor:pointer}
+/* page 5 */
+.loc{background:rgba(255,253,248,.85);border:1px solid var(--g);border-radius:16px;padding:26px 20px;box-shadow:inset 0 0 0 5px #fffdf8,inset 0 0 0 6px rgba(184,153,106,.6)}
+.pin{width:74px;height:74px;margin:0 auto 6px;color:var(--g);animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px)}}
+.venue{font-size:clamp(30px,9vw,40px);font-weight:600;color:var(--g2)}
+/* nav */
+nav{position:fixed;left:0;right:0;bottom:calc(20px + env(safe-area-inset-bottom,0px));display:flex;justify-content:center;align-items:center;gap:16px;z-index:9;opacity:0;pointer-events:none;transition:opacity .6s}
+nav.show{opacity:1;pointer-events:auto}
+nav button{width:44px;height:44px;border-radius:50%;border:1px solid var(--g);background:rgba(255,253,248,.92);color:var(--g2);font-size:20px;cursor:pointer}
+nav button:disabled{opacity:.25}
+.dots{display:flex;gap:7px}.dots i{width:7px;height:7px;border-radius:50%;background:rgba(184,153,106,.45);transition:.4s}.dots i.on{background:var(--g2);transform:scale(1.4)}
+.toast{position:fixed;left:50%;bottom:90px;transform:translate(-50%,20px);background:var(--ink);color:var(--paper);padding:10px 20px;border-radius:30px;font-weight:600;opacity:0;transition:.4s;z-index:20;pointer-events:none}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--g2);outline-offset:3px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}.ch{opacity:1;transform:none;filter:none}}
+@media (min-width:700px){.page{padding-top:50px}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="star" viewBox="0 0 40 40"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="8" width="24" height="24"/><rect x="8" y="8" width="24" height="24" transform="rotate(45 20 20)"/><circle cx="20" cy="20" r="4" fill="currentColor"/></g></symbol>
+<symbol id="pinI" viewBox="0 0 64 64"><g fill="none" stroke="currentColor" stroke-width="2.4"><path d="M32 60C20 44 12 35 12 25a20 20 0 0 1 40 0c0 10-8 19-20 35z"/><rect x="24" y="17" width="16" height="16"/><rect x="24" y="17" width="16" height="16" transform="rotate(45 32 25)"/></g></symbol>
+</defs></svg>
+<div class="frame" id="frame" style="opacity:0;transition:opacity 1s"><i></i><i></i><i></i><i></i></div>
+
+<!-- PAGE 1 -->
+<section class="page on" id="p0">
+ <div class="scene">
+  <div class="book" id="book" role="button" tabindex="0" aria-label="Tap the book to open">
+   <div class="pg"><div class="ar">السَّلَامُ عَلَيْكُمْ<br>وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</div></div>
+   <div class="cover">
+    <div class="face front">
+     
+     <div class="ar">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+     <div class="cord"></div>
+     <div class="gold" style="font-size:clamp(16px,4.6vw,20px);letter-spacing:.16em;text-align:center;font-weight:600">YOU ARE CORDIALLY INVITED</div>
+    </div>
+    <div class="face back"></div>
+   </div>
+  </div>
+  <p class="hint gold small">Tap the Book to Open</p>
+ </div>
+</section>
+
+<!-- PAGE 2 -->
+<section class="page" id="p1"><div class="in">
+ <div class="ar" style="font-size:clamp(24px,7vw,30px)">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</div>
+ <div class="ar" style="font-size:clamp(18px,5vw,22px)">السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ</div>
+ <p class="small" style="font-style:italic">“Peace be upon you, and the mercy and blessings of Allah.”</p>
+ <div class="div"></div>
+ <p class="small gold" style="letter-spacing:.14em;font-weight:600">Together with Their Families</p>
+ <p class="small" style="margin-top:6px">With the blessings of Allah Almighty and the duas of our families, we joyfully invite you to join us in celebrating the blessed occasion of the Nikkah of</p>
+ <h2 class="names split" style="margin-top:12px">Shireen</h2>
+ <p class="small">Daughter of Mr. Mohd. Uvais</p>
+ <div class="amp">&amp;</div>
+ <h2 class="names split">Hamza Zafar</h2>
+ <p class="small">Son of Mr. Mohd. Zafar</p>
+ <div class="div"></div>
+ <p class="small">Your presence and duas will make this special occasion even more meaningful. We look forward to celebrating this beautiful day with you.</p>
+ <p class="gold" style="font-size:clamp(20px,5.6vw,24px);font-weight:600;margin-top:10px">Tuesday, 8 December 2026</p>
+</div></section>
+
+<!-- PAGE 3 -->
+<section class="page" id="p2"><div class="in">
+ <p class="gold" style="font-size:clamp(30px,9vw,40px);font-weight:600;margin-bottom:18px">Save the Date</p>
+ <div class="scroll" id="scroll" role="button" tabindex="0" aria-label="Tap to open the scroll" style="position:relative;cursor:pointer">
+  <div class="roll"></div>
+  <div class="parch"><div class="pad">
+   <div class="ar">بَارَكَ اللَّهُ لَكُمَا</div>
+   <div class="div" style="color:#a8842c"></div>
+   <div class="date">Tuesday<br>8 December 2026</div>
+   <div class="cd" id="cd"><div><b>0</b><span>Days</span></div><div><b>0</b><span>Hours</span></div><div><b>0</b><span>Minutes</span></div><div><b>0</b><span>Seconds</span></div></div>
+   <button class="btn" id="cal">Add to Calendar</button>
+   <p style="margin-top:8px"><a id="gcal" target="_blank" rel="noopener" style="color:#7a5a14;font-size:14px">or open in Google Calendar</a></p>
+  </div></div>
+  <div class="roll"></div>
+ </div>
+ <p class="tap gold small">Tap the scroll to open</p>
+</div></section>
+
+<!-- PAGE 4 -->
+<section class="page" id="p3"><div class="in" style="max-width:100%">
+ <p class="gold" style="font-size:clamp(30px,9vw,40px);font-weight:600">Wedding Functions</p>
+ <div class="div"></div>
+ <div class="track" id="track">
+  <div class="card"><h3>Dinner</h3><p class="small">Tuesday, 8 December 2026</p><div class="t">8:00 PM</div></div>
+  <div class="card"><h3>Reception of Barat</h3><p class="small">Tuesday, 8 December 2026</p><div class="t">9:00 PM</div></div>
+  <div class="card"><h3>Nikkah</h3><p class="small">Tuesday, 8 December 2026</p><div class="t">10:00 PM</div></div>
+  <div class="card"><h3>Rukhsati</h3><p class="small">Tuesday, 8 December 2026</p><div class="t">11:00 PM</div></div>
+ </div>
+ <div class="arrows"><button id="cp" aria-label="Previous function">‹</button><span class="gold small" id="cc">1 / 4</span><button id="cn" aria-label="Next function">›</button></div>
+ <p class="small" style="margin-top:8px;opacity:.7">Swipe to see each function</p>
+</div></section>
+
+<!-- PAGE 5 -->
+<section class="page" id="p4"><div class="in">
+ <div class="loc">
+  <svg class="pin"><use href="#pinI"/></svg>
+  <p class="gold small" style="letter-spacing:.14em;font-weight:600">Wedding Venue</p>
+  <h2 class="venue">Plaza Marriage Lawn</h2>
+  <div class="div"></div>
+  <p style="font-size:clamp(19px,5.4vw,23px)">Jhanda Kalan, Shahjahanpur</p>
+  <div class="btns">
+   <a class="btn" id="dir" href="https://maps.app.goo.gl/89J1LBhmZoh7Leeo6?g_st=ic" target="_blank" rel="noopener">Get Directions</a>
+   <button class="btn o" id="copy">Copy Address</button>
+  </div>
+ </div>
+</div></section>
+
+<!-- PAGE 6 -->
+<section class="page" id="p5"><div class="in">
+ <p class="gold" style="font-size:clamp(22px,6.4vw,28px);font-weight:600;letter-spacing:.1em;line-height:1.3">WE LOOK FORWARD TO CELEBRATING WITH YOU!</p>
+ <div class="div"></div>
+ <div class="ar" style="font-size:clamp(22px,6.4vw,28px)">بَارَكَ اللَّهُ لَكُمَا وَبَارَكَ عَلَيْكُمَا<br>وَجَمَعَ بَيْنَكُمَا فِي خَيْرٍ</div>
+ <h2 class="names" style="margin:16px 0 4px;font-size:clamp(34px,10vw,48px)">Shireen</h2>
+ <div class="amp">&amp;</div>
+ <h2 class="names" style="font-size:clamp(34px,10vw,48px)">Hamza Zafar</h2>
+ <div class="div"></div>
+ <p class="small" style="font-style:italic;font-size:clamp(17px,4.8vw,20px)">May Allah bless this beautiful occasion with happiness, mercy and barakah. Ameen.</p>
+</div></section>
+
+<nav id="nav"><button id="prev" aria-label="Previous page">‹</button><div class="dots" id="dots"></div><button id="next" aria-label="Next page">›</button></nav>
+<div class="toast" id="toast"></div>
+
+<script>
+var $=function(s){return document.querySelector(s)},pages=[].slice.call(document.querySelectorAll('.page')),cur=0,nav=$('#nav'),dots=$('#dots');
+pages.forEach(function(_,i){dots.appendChild(document.createElement('i'))});
+function go(n){
+ if(n<0||n>=pages.length)return;
+ pages[cur].classList.remove('on');cur=n;pages[cur].classList.add('on');pages[cur].scrollTop=0;
+ [].forEach.call(dots.children,function(d,i){d.classList.toggle('on',i===cur)});
+ $('#prev').disabled=cur<=1;$('#next').disabled=cur===pages.length-1;
+ if(cur===3)setTimeout(fx,60);
+}
+$('#prev').onclick=function(){go(cur-1)};$('#next').onclick=function(){go(cur+1)};
+document.addEventListener('keydown',function(e){if(cur>0){if(e.key==='ArrowDown'||e.key==='PageDown')go(cur+1);if(e.key==='ArrowUp'||e.key==='PageUp')go(cur-1)}});
+
+/* split names */
+[].forEach.call(document.querySelectorAll('.split'),function(el){
+ var t=el.textContent,i=0;el.setAttribute('aria-label',t);el.textContent='';
+ t.split('').forEach(function(c){var s=document.createElement('span');s.className='ch';s.setAttribute('aria-hidden','true');s.style.setProperty('--i',i++);s.innerHTML=c===' '?'&nbsp;':c;el.appendChild(s)});
+});
+
+/* book */
+var book=$('#book'),opened=false;
+function openBook(){
+ if(opened)return;opened=true;book.classList.add('open');$('.hint').style.opacity=0;
+ setTimeout(function(){$('#frame').style.opacity=1;nav.classList.add('show');go(1)},1900);
+}
+book.onclick=openBook;book.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openBook()}};
+
+/* scroll */
+var sc=$('#scroll');
+function openScroll(){sc.classList.add('open')}
+sc.onclick=function(e){if(e.target.closest('button,a'))return;openScroll()};
+sc.onkeydown=function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openScroll()}};
+for(var k=0;k<16;k++){var d=document.createElement('span');d.className='dot';d.style.left=(Math.random()*100)+'%';d.style.top=(40+Math.random()*50)+'%';d.style.animationDuration=(4+Math.random()*5)+'s';d.style.animationDelay=(Math.random()*5)+'s';$('#p2').appendChild(d)}
+
+/* countdown */
+var target=new Date(2026,11,8,20,0,0).getTime();
+function tick(){
+ var s=Math.max(0,Math.floor((target-Date.now())/1000)),v=[Math.floor(s/86400),Math.floor(s%86400/3600),Math.floor(s%3600/60),s%60];
+ [].forEach.call(document.querySelectorAll('#cd b'),function(b,i){b.textContent=v[i]});
+}
+tick();setInterval(tick,1000);
+
+/* calendar */
+var ADDR='Plaza Marriage Lawn, Jhanda Kalan, Shahjahanpur',MAP='https://maps.app.goo.gl/89J1LBhmZoh7Leeo6?g_st=ic',
+DESC='Dinner 8:00 PM. Reception of Barat 9:00 PM. Nikkah 10:00 PM. Rukhsati 11:00 PM.';
+function esc(t){return t.replace(/,/g,'\\,').replace(/;/g,'\\;')}
+$('#gcal').href='https://calendar.google.com/calendar/render?action=TEMPLATE&text='+encodeURIComponent('Nikkah of Shireen & Hamza Zafar')+'&dates=20261208T200000/20261209T000000&location='+encodeURIComponent(ADDR)+'&details='+encodeURIComponent(DESC+' '+MAP);
+$('#cal').onclick=function(){
+ var ics=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//Wedding Invitation//EN','BEGIN:VEVENT','UID:hamza-shireen-20261208@invitation','DTSTAMP:20261125T000000Z','DTSTART:20261208T200000','DTEND:20261209T000000',
+ 'SUMMARY:'+esc('Nikkah of Shireen & Hamza Zafar'),'LOCATION:'+esc(ADDR),'DESCRIPTION:'+esc(DESC)+'\\n'+MAP,'END:VEVENT','END:VCALENDAR'].join('\r\n');
+ try{
+  var u=URL.createObjectURL(new Blob([ics],{type:'text/calendar;charset=utf-8'})),a=document.createElement('a');
+  a.href=u;a.download='Hamza-Shireen-Wedding.ics';document.body.appendChild(a);a.click();a.remove();
+  setTimeout(function(){URL.revokeObjectURL(u)},4000);toast('Opening your calendar');
+ }catch(e){window.open($('#gcal').href,'_blank')}
+};
+
+/* carousel */
+var tr=$('#track'),cards=[].slice.call(tr.children);
+function fx(){
+ var c=tr.scrollLeft+tr.clientWidth/2,best=0,bd=1e9;
+ cards.forEach(function(el,i){
+  var m=el.offsetLeft+el.offsetWidth/2,d=(m-c)/250,a=Math.min(Math.abs(d),1.6);
+  el.style.transform='rotateY('+(-d*32)+'deg) scale('+(1-a*.14)+')';el.style.opacity=1-a*.35;
+  if(Math.abs(m-c)<bd){bd=Math.abs(m-c);best=i}
+ });
+ $('#cc').textContent=(best+1)+' / 4';return best;
+}
+tr.addEventListener('scroll',fx,{passive:true});window.addEventListener('resize',fx);
+function to(i){i=Math.max(0,Math.min(3,i));cards[i].scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'})}
+$('#cp').onclick=function(){to(fx()-1)};$('#cn').onclick=function(){to(fx()+1)};
+cards.forEach(function(el,i){el.onclick=function(){to(i)}});
+fx();
+
+/* copy */
+function toast(m){var t=$('#toast');t.textContent=m;t.classList.add('on');clearTimeout(t._h);t._h=setTimeout(function(){t.classList.remove('on')},2200)}
+$('#copy').onclick=function(){
+ function fb(){var x=document.createElement('textarea');x.value=ADDR;x.setAttribute('readonly','');x.style.cssText='position:fixed;top:0;left:0;opacity:0;font-size:16px';document.body.appendChild(x);x.focus();x.select();x.setSelectionRange(0,999);var ok=false;try{ok=document.execCommand('copy')}catch(e){}x.remove();toast(ok?'Address copied':'Copy failed. Please copy manually.')}
+ if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(ADDR).then(function(){toast('Address copied')},fb)}else fb();
+};
+</script>
+</body>
+</html>
